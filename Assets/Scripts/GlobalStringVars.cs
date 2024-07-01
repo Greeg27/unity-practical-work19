@@ -8,4 +8,10 @@ public class GlobalStringVars
     public const string FIRE = "Fire1";
 
     #endregion
+
+    #region Total
+
+    public const string CANCEL = "Cancel";
+
+    #endregion
 }

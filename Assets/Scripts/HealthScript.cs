@@ -5,6 +5,7 @@ public class HealthScript : MonoBehaviour
     [SerializeField] float maxHealth;
     [SerializeField] Animator animator;
     [SerializeField] GameObject obj;
+    [SerializeField] GameManagerScript gameManagerScript;
     private float health;
 
     private void Awake()
@@ -15,6 +16,7 @@ public class HealthScript : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        gameManagerScript.Score—alculation(damage);
         CheckAlive();
     }
 
@@ -26,14 +28,5 @@ public class HealthScript : MonoBehaviour
             animator.SetBool("JumpTrigger", true);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Damage"))
-        {
-            TakeDamage(collision.gameObject.GetComponent<DamageDeallerScript>().Damage);
-        }
-    }
-
 
 }
