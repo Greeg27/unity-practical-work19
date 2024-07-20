@@ -19,11 +19,6 @@ public class MovementScript : MonoBehaviour
         rb.velocity = new Vector2(speed, rb.velocity.y);
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    HorizontalMovement(normalSpeed * -1);
-    //}
-
     private void Update()
     {
         HorizontalMovement(curentSpeed);

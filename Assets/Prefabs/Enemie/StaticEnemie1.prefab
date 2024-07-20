@@ -328,6 +328,7 @@ MonoBehaviour:
   maxHealth: 300
   animator: {fileID: 6613857857911778527}
   obj: {fileID: 6613857859274785220}
+  gameManagerScript: {fileID: 0}
 --- !u!1 &6613857859274785220
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5075869727332284737}
   - component: {fileID: 5075869727332284736}
   - component: {fileID: 5075869727332284739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,3 +72,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasScript: {fileID: 0}
+  gameManagerScript: {fileID: 0}
+  playerInputScript: {fileID: 0}
+  playerMovementScript: {fileID: 0}

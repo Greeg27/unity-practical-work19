@@ -4,9 +4,10 @@ using UnityEngine;
 public class ExplosionScript : MonoBehaviour
 {
     [SerializeField] GameObject mankey;
+    [SerializeField] Cabin cabin;
+    [SerializeField] int collisionQuantity;
     private Animator animator;
     private PointEffector2D pointEffector;
-    private int collisionQuantity;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class ExplosionScript : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Destroy(mankey);
         pointEffector.forceMagnitude = 50;
+        cabin.EnemiesSpawner();
         StartCoroutine(DelExplosion());
     }
 

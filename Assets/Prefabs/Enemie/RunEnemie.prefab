@@ -148,7 +148,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 5523976016143819628}
   obj: {fileID: 5523976016309053994}
-  gameManagerScript: {fileID: 0}
+  gameManagerScript: {fileID: 6784524439440050440, guid: 4983c9d2ff276e24e926ba8ef8194b34, type: 3}
 --- !u!1 &5523976016309053994
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,8 +178,8 @@ Transform:
   m_GameObject: {fileID: 5523976016309053994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5523976016143819630}
   m_Father: {fileID: 0}
